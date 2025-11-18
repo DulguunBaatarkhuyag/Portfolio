@@ -1,55 +1,94 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8" />
   <title>Dulguun Baatarkhuyag — Portfolio</title>
-  <meta name="description" content="Mechanical & RF engineering portfolio: waveguide filters, radiometer assemblies, EMI/thermal enclosures.">
-  <link rel="icon" href="assets/favicon.png">
-  <meta property="og:title" content="Dulguun Baatarkhuyag — Portfolio">
-  <meta property="og:description" content="Waveguide filters, K/V-band radiometers, EMI/thermal enclosures, fixtures.">
-  <meta property="og:image" content="assets/og-image.png">
-  <link rel="stylesheet" href="assets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mechanical & RF portfolio: waveguide filters, radiometer assemblies, fixtures." />
+  <link rel="icon" href="data:,">
+  <style>
+    :root { --fg:#111; --muted:#666; --line:#e5e5e5; --bg:#fff; --card:#fff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+    header, main, footer { max-width: 1100px; margin: 0 auto; padding: 16px; }
+    header h1 { margin: 8px 0 0; font-size: 28px; }
+    header p { margin: 4px 0 8px; color: var(--muted); }
+    nav a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); margin-right: 12px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+    figure { margin:0; border:1px solid var(--line); border-radius:12px; background:var(--card); overflow:hidden; }
+    figure img { display:block; width:100%; height:auto; }
+    figcaption { padding:10px 12px; font-size:14px; color:var(--muted); }
+    figcaption b { color: var(--fg); font-weight:600; }
+    footer { color:var(--muted); font-size:12px; border-top:1px solid var(--line); margin-top: 20px; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg:#f2f2f2; --muted:#b8b8b8; --line:#343434; --bg:#0e0e0e; --card:#141414; }
+    }
+  </style>
 </head>
 <body>
-<header class="wrap">
-  <h1>Dulguun Baatarkhuyag</h1>
-  <p>Mechanical & RF Engineering — K/V-band radiometers, waveguide filters, EMI/thermal, environmental hardening.</p>
-  <nav>
-    <a href="mailto:dulguun.baatarkhuyag@colorado.edu">Email</a> ·
-    <a href="https://www.linkedin.com/in/dulguun-baatarkhuyag/">LinkedIn</a> ·
-    <a href="pdf/Vband_Filter_RevB.pdf">Sample drawing (PDF)</a>
-  </nav>
-</header>
+  <header>
+    <h1>Dulguun Baatarkhuyag</h1>
+    <p>Mechanical & RF Engineering — K/V-band radiometers, waveguide filters, EMI/thermal, fixtures.</p>
+    <nav>
+      <a href="mailto:dulguun.baatarkhuyag@colorado.edu">Email</a>
+      <a href="https://www.linkedin.com/in/dulguun-baatarkhuyag/">LinkedIn</a>
+      <!-- Optional: link to PDF portfolio index -->
+      <!-- <a href="pdf/Portfolio_Index.pdf">Portfolio PDF</a> -->
+    </nav>
+  </header>
 
-<main class="wrap grid">
-  <!-- CARD 1 -->
-  <article class="card">
-    <a href="pdf/Vband_Filter_RevB.pdf" target="_blank" rel="noopener">
-      <img src="img/Vband_Filter_RevB.png" alt="V-band waveguide filter — Rev B drawing preview" loading="lazy">
-    </a>
-    <h3>V-band Waveguide Filter (Rev B)</h3>
-    <p>Sim/design/fab; verified IL/ripple/rejection via VNA S-parameters. <a href="pdf/Vband_Filter_RevB.pdf" target="_blank" rel="noopener">PDF</a></p>
-    <ul class="tags"><li>Waveguide</li><li>V-band</li><li>Drawing</li></ul>
-  </article>
+  <main>
+    <section class="grid">
+      <!-- CARD 1 -->
+      <figure>
+        <a href="img/vband-filter-revb.jpg" target="_blank" rel="noopener">
+          <img src="img/vband-filter-revb.jpg" alt="V-band waveguide filter — drawing preview" loading="lazy">
+        </a>
+        <figcaption>
+          <b>V-band Waveguide Filter (Rev B)</b><br>
+          Sim/design/fab; passband IL/ripple verified by VNA S-parameters.
+        </figcaption>
+      </figure>
 
-  <!-- CARD 2 -->
-  <article class="card">
-    <a href="pdf/Kband_Assembly_Drawing_A2.pdf" target="_blank" rel="noopener">
-      <img src="img/Kband_Assembly_Isometric.png" alt="K-band radiometer assembly — isometric view" loading="lazy">
-    </a>
-    <h3>K-band Radiometer Assembly</h3>
-    <p>Split-block housings, EMI/thermal enclosure; GD&amp;T, stack-ups. <a href="pdf/Kband_Assembly_Drawing_A2.pdf" target="_blank" rel="noopener">PDF</a></p>
-    <ul class="tags"><li>K-band</li><li>Assembly</li><li>GD&amp;T</li></ul>
-  </article>
+      <!-- CARD 2 -->
+      <figure>
+        <a href="img/kband-assembly-iso.jpg" target="_blank" rel="noopener">
+          <img src="img/kband-assembly-iso.jpg" alt="K-band radiometer assembly — isometric view" loading="lazy">
+        </a>
+        <figcaption>
+          <b>K-band Radiometer Assembly</b><br>
+          Split-block housings; GD&amp;T; EMI/thermal enclosure; tolerance stack-ups.
+        </figcaption>
+      </figure>
 
-  <!-- Add more cards by copy/paste -->
-</main>
+      <!-- CARD 3 -->
+      <figure>
+        <a href="img/emi-thermal-enclosure.jpg" target="_blank" rel="noopener">
+          <img src="img/emi-thermal-enclosure.jpg" alt="EMI/thermal enclosure — exploded view" loading="lazy">
+        </a>
+        <figcaption>
+          <b>EMI / Thermal Enclosure</b><br>
+          Bonding/grounding strategy; thermal path (heatsink/TIM) for temperature-sensitive parts.
+        </figcaption>
+      </figure>
 
-<footer class="wrap small">
-  © <span id="y"></span> Dulguun Baatarkhuyag · Built on GitHub Pages
-</footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+      <!-- COPY/PASTE THIS BLOCK TO ADD MORE ITEMS
+      <figure>
+        <a href="img/your-image.jpg" target="_blank" rel="noopener">
+          <img src="img/your-image.jpg" alt="Short, specific description of the image" loading="lazy">
+        </a>
+        <figcaption>
+          <b>Short title</b><br>
+          One-line description (tool, band, key feature).
+        </figcaption>
+      </figure>
+      -->
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Dulguun Baatarkhuyag · Built on GitHub Pages
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
